@@ -1,50 +1,49 @@
 <template>
-<div>
-<AppHeader/>
-<LFhome/>
-<How-it-works/>
-<Booking/>
-<Featured/>
-<Review/>
-<Footer/>
-</div>
-
+  <div>
+    <AppHeader />
+    <Lookingforhome />
+    <Howitworks />
+    <Booknow />
+    <Featured />
+    <Video />
+    <Review />
+    <Footer />
+  </div>
 </template>
 
-<script> 
-import AppHeader from '../components/AppHeader.vue'
-import LFhome from '../components/LFhome.vue'
-import Howitworks from '../components/How-it-works.vue'
-import Booking from '../components/Booking.vue'
-import Featured from '../components/Featured.vue'
-import Review from '../components/Review.vue'
-import Footer from '../components/Footer.vue'
+<script>
+import AppHeader from "../components/AppHeader.vue";
+import Lookingforhome from "../components/Lookingforhome.vue";
+import Howitworks from "../components/Howitworks.vue";
+import Booknow from "../components/Booknow.vue";
+import Featured from "../components/Featured.vue";
+import Video from "../components/Video.vue";
+import Review from "../components/Review.vue";
+import Footer from "../components/Footer.vue";
 export default {
   components: {
     AppHeader,
-    LFhome,
+    Lookingforhome,
     Howitworks,
-    Booking,
+    Booknow,
     Featured,
+    Video,
     Review,
-    Footer
-  }
-}
+    Footer,
+  },
+};
 </script>
 
-
 <style>
-
-
-body { position: relative;
-width: 1440px;
-height: 6318px;
-margin: 0px;
-padding: 0px;
-background: white;
-border-radius: 30px; }
+body {
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  border-radius: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+}
 ul {
   list-style-type: none;
 }
-
 </style>
