@@ -49,7 +49,7 @@
         <p class="how__lineTwo">/03</p>
       </div>
     </div>
-    <div class="dupa">
+    <div class="card-component">
       <Card
         v-for="(card, index) in howItWorksCard"
         :class="card.class"
@@ -161,7 +161,7 @@ export default {
   font-size: 14px;
   color: #888888;
 }
-.dupa {
+.card-component {
   display: flex;
   width: 940px;
   height: 150px;
@@ -169,14 +169,14 @@ export default {
   margin-left: 290px;
   justify-content: space-between;
 }
-.dupa h3 {
+.card-component h3 {
   font-weight: 400;
   font-size: 25px;
   margin-top: 0px;
   margin-bottom: 20px;
   color: #000000;
 }
-.dupa p {
+.card-component p {
   margin-top: 10px;
   width: 250px;
   font-weight: normal;
