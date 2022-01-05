@@ -7,7 +7,7 @@
     <Featured />
     <Video />
     <Review />
-    <Footer />
+    <Footerr />
   </div>
 </template>
 
@@ -19,7 +19,7 @@ import Booknow from "../components/Booknow.vue";
 import Featured from "../components/Featured.vue";
 import Video from "../components/Video.vue";
 import Review from "../components/Review.vue";
-import Footer from "../components/Footer.vue";
+import Footerr from "../components/Footerr.vue";
 export default {
   components: {
     AppHeader,
@@ -29,7 +29,7 @@ export default {
     Featured,
     Video,
     Review,
-    Footer,
+    Footerr,
   },
 };
 </script>

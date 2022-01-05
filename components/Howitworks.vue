@@ -13,31 +13,29 @@
         <rect class="how__searchRect">
           <span class="how__searchRect-span">01</span></rect
         >
-        <h3 class="how__searchTitle">Search</h3>
-        <p class="how__searchText">
+        <Card />
+        <!-- <p class="how__searchText">
           Find a home from our search bar. Enter your specific location and date
-        </p>
+        </p> !-->
       </div>
       <div class="how__choose">
         <img class="how__chooseImg" src="/assets/dwa.png" alt="noimg" />
         <rect class="how__chooseRect">
           <span class="how__chooseRect-span">02</span></rect
         >
-        <h3 class="how__chooseTitle">Choose</h3>
-        <p class="how__chooseText">
+        <!--  <p class="how__chooseText">
           Choose your desire home on expected date for your events.
-        </p>
+        </p> !-->
       </div>
       <div class="how__book">
         <img class="how__bookImg" src="/assets/trzy.png" alt="noimg" />
         <rect class="how__bookRect">
           <span class="how__bookRect-span">03</span></rect
         >
-        <h3 class="how__bookTitle">Book</h3>
-        <p class="how__bookText">
+        <!-- <p class="how__bookText">
           Book your desire home<br />
           expected date for your events.
-        </p>
+        </p> !-->
       </div>
       <div class="how__lines">
         <svg class="how__blackline" height="250" width="500">
