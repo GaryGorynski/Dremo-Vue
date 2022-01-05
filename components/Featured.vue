@@ -121,6 +121,7 @@ export default {
 .featuredHomes__btn-txt {
   position: relative;
   opacity: 01;
+  bottom: 5px;
 }
 .featuredHomes__btn-hover {
   color: white;
@@ -209,7 +210,7 @@ export default {
   position: absolute;
   left: 16.27%;
   right: 51.91%;
-  top: 89.51%;
+  top: 87.51%;
   bottom: 3.28%;
   font-weight: 400;
   font-size: 11px;

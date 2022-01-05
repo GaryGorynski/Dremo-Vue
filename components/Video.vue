@@ -166,7 +166,7 @@ export default {
 }
 .videoBox__txt {
   position: relative;
-  top: 2043px;
+  top: 2030px;
   left: 278px;
   width: 50px;
   font-size: 12px;

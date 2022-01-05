@@ -1,41 +1,30 @@
 <template>
-  <section class="how">
-    <div class="howx">
+  <section class="howItWorks">
+    <div class="how">
       <h2 class="how__title">How it works</h2>
       <p class="how__subtitle">
         Safe and easy! Your booking will be confirmed in less than 2 working<br />
         days stop the flat visits and welcome the right person
       </p>
     </div>
-    <div class="howxy">
+    <div class="howCards">
       <div class="how__search">
         <img class="how__searchImg" src="/assets/jeden.png" alt="noimg" />
         <rect class="how__searchRect">
           <span class="how__searchRect-span">01</span></rect
         >
-        <Card />
-        <!-- <p class="how__searchText">
-          Find a home from our search bar. Enter your specific location and date
-        </p> !-->
       </div>
       <div class="how__choose">
         <img class="how__chooseImg" src="/assets/dwa.png" alt="noimg" />
         <rect class="how__chooseRect">
           <span class="how__chooseRect-span">02</span></rect
         >
-        <!--  <p class="how__chooseText">
-          Choose your desire home on expected date for your events.
-        </p> !-->
       </div>
       <div class="how__book">
         <img class="how__bookImg" src="/assets/trzy.png" alt="noimg" />
         <rect class="how__bookRect">
           <span class="how__bookRect-span">03</span></rect
         >
-        <!-- <p class="how__bookText">
-          Book your desire home<br />
-          expected date for your events.
-        </p> !-->
       </div>
       <div class="how__lines">
         <svg class="how__blackline" height="250" width="500">
@@ -60,26 +49,57 @@
         <p class="how__lineTwo">/03</p>
       </div>
     </div>
+    <div class="dupa">
+      <Card
+        v-for="(card, index) in howItWorksCard"
+        :class="card.class"
+        :title="card.title"
+        :description="card.description"
+        :key="index"
+      />
+    </div>
   </section>
 </template>
 
 <script>
 import Card from "../components/Card.vue";
 export default {
-  components: Card,
-
-  name: "Howitworks",
+  components: {
+    Card,
+  },
+  data() {
+    return {
+      howItWorksCard: [
+        {
+          title: "Search",
+          description:
+            "Find a home from our search bar. Enter your specific location and date",
+          class: "left",
+        },
+        {
+          title: "Choose",
+          description:
+            "Choose your desire home on expected date for your events.",
+          class: "middle",
+        },
+        {
+          title: "Book",
+          description: "Book your desire home expected date for your events.",
+          class: "right",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style>
-.how {
+.howItWorks {
   display: flex;
   height: 700px;
   flex-flow: column;
   padding-bottom: 300px;
 }
-
 .how__title {
   margin-top: 80px;
   text-align: center;
@@ -118,7 +138,7 @@ export default {
   height: 53px;
   background: #000000;
   border-radius: 0px 30px 0px 0px;
-  margin-top: -57px;
+  margin-top: -59px;
   margin-left: -2px;
 }
 
@@ -131,9 +151,6 @@ export default {
   margin-top: 5px;
 }
 .how__searchTitle {
-  font-weight: 400;
-  font-size: 25px;
-  color: #000000;
   line-height: 20px;
 }
 .how__searchText {
@@ -143,6 +160,36 @@ export default {
   font-weight: normal;
   font-size: 14px;
   color: #888888;
+}
+.dupa {
+  display: flex;
+  width: 940px;
+  height: 150px;
+  line-height: 20px;
+  margin-left: 290px;
+  justify-content: space-between;
+}
+.dupa h3 {
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+.dupa p {
+  margin-top: 10px;
+  width: 250px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #888888;
+  line-height: 20px;
+}
+.middle {
+  margin-top: 30px;
+}
+.right p {
+  width: 220px;
+  margin-right: 30px;
 }
 .how__choose {
   float: left;

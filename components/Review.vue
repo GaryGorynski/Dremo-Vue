@@ -16,7 +16,7 @@
         <span class="test__containerDot test__containerDot--C"></span>
       </div>
       <i class="review__quote fas fa-quote-right"></i>
-      <h3 class="review__heading">Clients review</h3>
+      <h3 class="review__heading">Clients Review</h3>
       <p class="review__paragraph">
         Over 10,000 happy clients! Are you the next one?
       </p>
@@ -93,11 +93,11 @@ export default {
   position: relative;
   width: 291px;
   height: 60px;
-  left: 925px;
-  top: 210px;
+  left: 926px;
+  top: 213px;
 
   font-weight: 500;
-  font-size: 42px;
+  font-size: 40px;
   line-height: 60px;
   white-space: nowrap;
   /* identical to box height */
@@ -118,15 +118,14 @@ export default {
   width: 383px;
   height: 24px;
   left: 930px;
-  top: 280px;
+  top: 320px;
   white-space: nowrap;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   font-size: 16px;
   /* identical to box height */
 
-  color: #000000;
+  color: black;
 }
 .review__imgBcg {
   position: absolute;
@@ -422,10 +421,10 @@ export default {
 }
 .review__subscribeBoxBtn-hoverr {
   position: absolute;
-  right: 153px;
-  bottom: 19px;
-  width: 25px;
-  height: 25px;
+  right: 157px;
+  bottom: 17px;
+  width: 26px;
+  height: 26px;
   background: rgba(190, 202, 231, 0.2);
   margin-top: 5px;
   border-radius: 50%;
